@@ -1,0 +1,41 @@
+.questions{
+  height: body;
+  width: 100vw;
+  display: flex;
+  background-color: #fcfaef;
+  justify-content: center;
+}
+
+.question{
+  width: 60vw;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.question h3, p, input{
+  color: black;
+  margin: 0 10px;
+}
+.question h3{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.text-question{
+  margin-bottom: 10px;
+}
+
+.alternatives{
+  display: flex;
+  flex-direction: column;
+}
+
+.alternative{
+  display: flex;
+  padding: 2px 0;
+}
+.alternative label{
+  color: black;
+}
