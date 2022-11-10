@@ -1,23 +1,43 @@
 import Header from '../header';
 import './src/questions.css'
-import { Fragment } from 'react';
+import { Fragment, Component } from 'react';
+import '../../json/2010.json'
 
-const Questions = () => {
-  return(
-    <Fragment>
-      <Header/>
+class Questions extends Component {
+  state = {
+    questions: []
+  };
 
-      <div class="questions">
-        <div class="question">
-          <div class="text-question">
-            
-            
+  componentDidMount(){
+    fetch('')
+    .then(response => response.json())
+    .then(questions => this.setState({questions}))
+  }
+
+  render(){
+
+    const { questions } = this.state;
+
+    return(
+      <Fragment>
+        <Header/>
+  
+        <div class="questions">
+
+          {questions.map(question => (
+            <div class="question">
+            <h4>{question.titulo}</h4>
+            <div class="text-question">
+              <p>{question.enunciado}</p>
+            </div>
           </div>
+          ))}
+          
         </div>
-      </div>
-      
-    </Fragment>
-  );
+        
+      </Fragment>
+    );
+  }
 }
 
 export default Questions;

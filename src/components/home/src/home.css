@@ -19,7 +19,7 @@
   transition: 0.10s ease-in-out;
 }
 .option:hover{
-  transform: scale(1.018);
+  transform: scale(1.008);
 }
 
 .title{
@@ -41,4 +41,5 @@
 }
 .description p{
   margin: 5px 10px;
+  color: white;
 }

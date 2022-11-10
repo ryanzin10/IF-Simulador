@@ -3,21 +3,20 @@
   width: 100vw;
   display: flex;
   background-color: #fcfaef;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .question{
   width: 60vw;
-  height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
   background-color: white;
 }
-.question h3, p, input{
-  color: black;
+.question h4, p, input{
   margin: 0 10px;
 }
-.question h3{
+.question h4{
   padding: 10px;
   display: flex;
   justify-content: center;
