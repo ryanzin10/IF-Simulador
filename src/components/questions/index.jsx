@@ -25,11 +25,22 @@ class Questions extends Component {
         <div class="questions">
 
           {questions.map(question => (
+
             <div class="question">
-            <h4>{question.titulo}</h4>
-            <div class="text-question">
-              <p>{question.enunciado}</p>
+              <h4>{question.titulo}</h4>
+              <div class="text-question">
+                <p>{question.enunciado}</p>
+              </div>
+              
+              <div className='alternatives'>
+                <div className='alternative'>
+                  <input type="radio" name='a'/><label htmlFor="a">{question.opcoes.a}</label>
+                </div>
+                <div className='alternative'>
+                  <input type="radio" name='a'/><label htmlFor="a">{question.opcoes.b}</label>
+                </div>
             </div>
+            
           </div>
           ))}
           
