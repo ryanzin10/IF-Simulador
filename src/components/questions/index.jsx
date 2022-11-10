@@ -1,7 +1,6 @@
 import Header from '../header';
 import './src/questions.css'
 import { Fragment, Component } from 'react';
-import '../../json/2010.json'
 
 class Questions extends Component {
   state = {
@@ -38,6 +37,15 @@ class Questions extends Component {
                 </div>
                 <div className='alternative'>
                   <input type="radio" name='a'/><label htmlFor="a">{question.opcoes.b}</label>
+                </div>
+                <div className='alternative'>
+                  <input type="radio" name='a'/><label htmlFor="a">{question.opcoes.c}</label>
+                </div>
+                <div className='alternative'>
+                  <input type="radio" name='a'/><label htmlFor="a">{question.opcoes.d}</label>
+                </div>
+                <div className='alternative'>
+                  <input type="radio" name='a'/><label htmlFor="a">{question.opcoes.e}</label>
                 </div>
             </div>
             
