@@ -9,7 +9,7 @@ class Questions extends Component {
   };
 
   componentDidMount(){
-    fetch('')
+    fetch('https://raw.githubusercontent.com/ryanzin10/if-simulador/master/src/json/2010.json')
     .then(response => response.json())
     .then(questions => this.setState({questions}))
   }
